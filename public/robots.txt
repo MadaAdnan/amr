@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /auth/login
+Disallow: /dashboard
+Disallow: /cdn-cgi/
+Sitemap: https://lavishride.com/sitemap.xml
+Sitemap: https://blog.lavishride.com/sitemap.xml

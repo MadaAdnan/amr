@@ -1,0 +1,1 @@
+<div class="text-primary-hover mt-3 text-center"> Copyrights ©2024 Lavish Ride. </div>

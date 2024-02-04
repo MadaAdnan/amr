@@ -1,0 +1,131 @@
+.service__hero__text {
+    background: black;
+    opacity: 0.9;
+}
+.service__section__title{
+    font-size: 32px !important;
+}
+.service__section__title__line {
+    border-top: 1px solid #ae2228;
+    margin-bottom: 10px;
+    width: 85%;
+}
+.service__section__card__text{
+    text-align: justify;
+    text-align-last: left;
+    width: 85%;
+}
+.service_hero_section_container{
+
+}
+
+.services_hero_image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.image__thumbnail__section{
+    
+}
+.reservation__steps{
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+/* Sticky Bar */
+.icons {  
+    position: fixed;  
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+    margin-left: 2%;
+    background: #0b0a12;
+    border-radius: 21px;
+    padding: 5px;
+  }
+  
+  
+  .icons a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-top: 12%;
+    border-radius: 12px;
+}  
+  .icons a:hover {  background-color: rgb(0, 0, 0); opacity: 0.5;}
+  .social_icon { background-color:#2322; color:white;}
+
+/* Fleet */
+  .hero__image__fleet{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    background-image: url("https://images.unsplash.com/photo-1518689000812-44e345196396?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+
+  }
+  .hero__image__fleet::before {    
+    content: "";
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75;
+    background-size: cover;
+    position: absolute;
+    border-radius: var(--bs-border-radius-lg) !important;
+    background-color: rgb(0 0 0 / 60%);
+
+}
+.fleet__text{
+    position: relative;
+}
+.max__char{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  
+}
+.icon__fleet__card__fontSize{
+    color: #000;
+    font-size: 12px;
+}
+
+/* Phone number input */
+.iti { width: 100%; }
+
+/* From Validation Error  */
+label.error {
+    width: 100%;
+    color: red;
+    margin-top: 5px;
+    margin-left: 2px !important;
+}
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#custom-phone-error-message{
+    color: red;
+}
+
+/* Date picker design */
+.datepicker td,th{
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+td.active.day {
+    background: #ae2228 !important;
+}
+
+
+  

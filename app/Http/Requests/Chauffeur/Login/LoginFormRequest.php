@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Http\Requests\Chauffeur\Login;
+
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
+
+
+class LoginFormRequest extends FormRequest
+{
+    public function authorize()
+    {
+        return true;
+    }
+    public function rules()
+    {
+        return [
+            'email' => 'required|string|email|max:255',
+            'password' => 'required|string',
+            'fcm'=>'required|string'
+        ];
+    }
+    protected function failedValidation(Validator $validator)
+    {
+        $firstErrorMessage = $validator->errors()->first();
+
+        throw new HttpResponseException(
+            response()->json([
+                'success' => false,
+                'message' => '',
+                'error' => $firstErrorMessage,
+            ], 422)
+        );
+    }
+}

@@ -1,0 +1,1 @@
+@include('dashboard.companies.table')

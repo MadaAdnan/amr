@@ -1,0 +1,1 @@
+<p>New reservation, Trip number #{{ $details['trip']->id }}</p>
